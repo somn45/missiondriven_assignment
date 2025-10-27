@@ -6,6 +6,84 @@
     <title>Home</title>
   </head>
   <body>
-    <h1>Hello World! Here is home page</h1>
+    <header>
+      <div></div>
+      <h1>과제</h1>
+      <button>다운로드</button>
+    </header>
+    <br />
+    <main>
+      <section>
+        <h5>대표 이미지</h5>
+        <div>
+          <form>
+            <label id="file">
+              <span>콘텐츠 대표 이미지를 등록해 주세요!</span>
+              <span>1:1 비율의 정사각형 이미지를 추천합니다</span>
+              <div>이미지 업로드</div>
+              <input type="file" form="file" />
+            </label>
+          </form>
+          <h5>추가 이미지 (선택)</h5>
+          <span>최대 4장까지 등록할 수 있어요.</span>
+          <ul>
+            <li>추가 이미지 아이콘</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h5>카테고리</h5>
+        <button>주제를 선택해주세요</button>
+        <h5>콘텐츠 제목</h5>
+        <textarea placeholder="제목을 입력해주세요">
+          <span>0 / 80자 (최소 8자)</span>
+        </textarea>
+        <h5>활동 방식 선택</h5>
+        <span>만남을 어떤 방식으로 진행하시겠어요?</span>
+        <button>온라인</button>
+        <button>직접 만나기</button>
+        <h5>상세 정보</h5>
+        <section>
+          <h5>회차 정보</h5>
+          <div>
+            <span>날짜 선택</span>
+            <button>날짜를 선택해주세요</button>
+          </div>
+
+          <div>
+            <span>시작 시간</span>
+            <div>
+              <button>오전</button>
+              <div>
+                <span>10</span>
+                <span>:</span>
+                <span>10</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span>종료 시간</span>
+            <div>
+              <button>오전</button>
+              <div>
+                <span>11</span>
+                <span>:</span>
+                <span>10</span>
+              </div>
+            </div>
+          </div>
+
+          <h5>활동 내용</h5>
+          <span>날짜별 활동 내용을 간단히 적어주세요</span>
+          <textarea placeholder="활동 내용을 간단히 입력해주세요.">
+            <span>0 / 800자 (최소 8자)</span>
+          </textarea>
+        </section>
+
+        <button>회차 추가하기</button>
+      </section>
+    </main>
   </body>
 </html>
