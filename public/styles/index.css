@@ -1,0 +1,135 @@
+body {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+header {
+  height: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #121212;
+  }
+  button {
+    width: 120px;
+    height: 38px;
+    padding: 8px 12px;
+    background-color: #d7d7d7;
+    border: none;
+    border-radius: 4px;
+    color: white;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-section > h5 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 0;
+  padding: 16px 8px;
+}
+
+.image-section > span {
+  color: #8f8f8f;
+  font-size: 20px;
+  text-align: center;
+  padding: 16px 8px;
+}
+
+.image-section-form {
+  width: 510px;
+  height: 510px;
+  margin-bottom: 20px;
+  background-color: #f7f7f8;
+  border-radius: 8px;
+}
+
+.image-section-form label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image-section-form label > div {
+  width: 342px;
+  height: 191px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-section-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.image-section-description span:first-child {
+  width: 66%;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.image-section-description span:last-child {
+  font-size: 22px;
+  letter-spacing: -2px;
+  color: #8f8f8f;
+  text-align: center;
+}
+
+.image-section-button {
+  width: 160px;
+  height: 58px;
+  background-color: #323232;
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section-form input[type="file"] {
+  display: none;
+}
+
+.addition_image_list {
+  display: grid;
+  grid-template-columns: repeat(2, 251px);
+  grid-template-rows: repeat(2, 251px);
+  gap: 8px;
+  list-style-type: none;
+}
+
+.addition_image_list li {
+  width: 251px;
+  height: 251px;
+  background-color: #f7f7f8;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addition_image_list li img {
+  width: 45px;
+  height: 45px;
+}

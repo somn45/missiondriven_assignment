@@ -3,33 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Home</title>
   </head>
   <body>
     <header>
       <div></div>
       <h1>과제</h1>
-      <button>다운로드</button>
+      <div>
+        <button>다음으로</button>
+      </div>
     </header>
     <br />
     <main>
-      <section>
+      <section class="image-section">
         <h5>대표 이미지</h5>
-        <div>
-          <form>
-            <label id="file">
-              <span>콘텐츠 대표 이미지를 등록해 주세요!</span>
-              <span>1:1 비율의 정사각형 이미지를 추천합니다</span>
-              <div>이미지 업로드</div>
-              <input type="file" form="file" />
-            </label>
-          </form>
-          <h5>추가 이미지 (선택)</h5>
-          <span>최대 4장까지 등록할 수 있어요.</span>
-          <ul>
-            <li>추가 이미지 아이콘</li>
-          </ul>
-        </div>
+        <form class="image-section-form">
+          <label id="file">
+            <div>
+              <div class="image-section-description">
+                <span>콘텐츠 대표 이미지를 등록해 주세요!</span>
+                <span>1:1 비율의 정사각형 이미지를 추천합니다</span>
+              </div>
+              <div class="image-section-button">이미지 업로드</div>
+            </div>
+            <input type="file" form="file" />
+          </label>
+        </form>
+
+        <h5>추가 이미지 (선택)</h5>
+        <span>최대 4장까지 등록할 수 있어요.</span>
+        <ul class="addition_image_list">
+          <li>
+            <img src="./images/image-plus.png" alt="추가 이미지 예시" />
+          </li>
+        </ul>
       </section>
 
       <section>
