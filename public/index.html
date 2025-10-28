@@ -40,57 +40,80 @@
         </ul>
       </section>
 
-      <section>
+      <section class="content-section">
         <h5>카테고리</h5>
-        <button>주제를 선택해주세요</button>
+        <button class="content-section-category">
+          <span>주제를 선택해주세요</span>
+          <img src="images/chevron-right.png" alt="카테고리 선택" />
+        </button>
         <h5>콘텐츠 제목</h5>
-        <textarea placeholder="제목을 입력해주세요">
+        <div class="content-section-title">
+          <textarea placeholder="제목을 입력해주세요"></textarea>
           <span>0 / 80자 (최소 8자)</span>
-        </textarea>
+        </div>
         <h5>활동 방식 선택</h5>
-        <span>만남을 어떤 방식으로 진행하시겠어요?</span>
-        <button>온라인</button>
-        <button>직접 만나기</button>
+        <div class="content-section-meeting">
+          <span>만남을 어떤 방식으로 진행하시겠어요?</span>
+          <div class="content-section-meeting-select">
+            <button>온라인</button>
+            <button>직접 만나기</button>
+          </div>
+        </div>
         <h5>상세 정보</h5>
-        <section>
-          <h5>회차 정보</h5>
-          <div>
-            <span>날짜 선택</span>
-            <button>날짜를 선택해주세요</button>
-          </div>
+        <section class="conent-section-detail">
+          <div class="content-section-round">
+            <h6>회차 정보</h6>
+            <div class="content-section-round-date">
+              <span>날짜 선택</span>
+              <button>날짜를 선택해주세요</button>
+            </div>
 
-          <div>
-            <span>시작 시간</span>
-            <div>
-              <button>오전</button>
-              <div>
-                <span>10</span>
-                <span>:</span>
-                <span>10</span>
+            <div class="content-section-date">
+              <span>시작 시간</span>
+              <div class="content-section-date-selection">
+                <div>
+                  <button>오전</button>
+                </div>
+                <button class="content-section-date-selection__button">
+                  10
+                </button>
+                <span class="content-section-date-selection__span">:</span>
+                <button class="content-section-date-selection__button">
+                  10
+                </button>
+              </div>
+            </div>
+
+            <div class="content-section-date">
+              <span>종료 시간</span>
+              <div class="content-section-date-selection">
+                <div>
+                  <button>오전</button>
+                </div>
+                <button class="content-section-date-selection__button">
+                  10
+                </button>
+                <span class="content-section-date-selection__span">:</span>
+                <button class="content-section-date-selection__button">
+                  10
+                </button>
               </div>
             </div>
           </div>
 
-          <div>
-            <span>종료 시간</span>
-            <div>
-              <button>오전</button>
-              <div>
-                <span>11</span>
-                <span>:</span>
-                <span>10</span>
-              </div>
+          <div class="content-section-activity">
+            <h6>활동 내용</h6>
+            <span>날짜별 활동 내용을 간단히 적어주세요</span>
+            <div class="content-section-activity-textarea">
+              <textarea
+                placeholder="활동 내용을 간단히 입력해주세요."
+              ></textarea>
+              <span>0 / 800자 (최소 8자)</span>
             </div>
           </div>
-
-          <h5>활동 내용</h5>
-          <span>날짜별 활동 내용을 간단히 적어주세요</span>
-          <textarea placeholder="활동 내용을 간단히 입력해주세요.">
-            <span>0 / 800자 (최소 8자)</span>
-          </textarea>
         </section>
 
-        <button>회차 추가하기</button>
+        <button class="content-section-round__submit">회차 추가하기</button>
       </section>
     </main>
   </body>

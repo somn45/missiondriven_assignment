@@ -26,6 +26,7 @@ header {
 }
 
 main {
+  padding: 0 20px 160px 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -132,4 +133,250 @@ main {
 .addition_image_list li img {
   width: 45px;
   height: 45px;
+}
+
+.content-section > h5 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 0;
+  padding: 16px 8px;
+}
+
+.content-section-category {
+  width: 100%;
+  max-width: 510px;
+  height: 60px;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px 8px 0 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #8f8f8f;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content-section-title {
+  width: 100%;
+  max-width: 510px;
+  height: 138px;
+  position: relative;
+}
+
+.content-section-title textarea {
+  width: 100%;
+  height: 138px;
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #8f8f8f;
+  box-sizing: border-box;
+}
+
+.content-section-title textarea::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #8f8f8f;
+}
+
+.content-section-title span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8f8f8f;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.content-section-meeting {
+  width: 100%;
+  max-width: 510px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-section-meeting span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #767676;
+}
+
+.content-section-meeting-select {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.content-section-meeting-select button {
+  width: 50%;
+  height: 58px;
+  background-color: #f7f7f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conent-section-detail {
+  width: 100%;
+  max-width: 510px;
+  margin-bottom: 24px;
+  padding: 28px 20px;
+  background-color: #f7f7f8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-sizing: border-box;
+}
+
+.conent-section-detail h6 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #121212;
+}
+
+.content-section-round {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-section-round > div {
+  display: flex;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.content-section-round > div > span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #565656;
+  flex-shrink: 0;
+}
+
+.content-section-round-date button {
+  height: 60px;
+  flex-grow: 1;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #8f8f8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section-date-selection {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.content-section-date-selection > div {
+  width: 80px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section-date-selection > div > button {
+  width: 52px;
+  height: 38px;
+  background-color: #f7f7f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section-date-selection__button {
+  flex-grow: 1;
+  background-color: white;
+  border: none;
+}
+
+.content-section-date-selection__span,
+.content-section-date-selection__button {
+  font-size: 20px;
+  font-weight: 500;
+  color: #121212;
+}
+
+.content-section-activity {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-section-activity span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #767676;
+}
+
+.content-section-activity-textarea {
+  width: 100%;
+  position: relative;
+}
+
+.content-section-activity-textarea textarea {
+  width: 100%;
+  height: 138px;
+  padding: 16px 16px 8px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #8f8f8f;
+  box-sizing: border-box;
+}
+
+.content-section-activity-textarea textarea::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #8f8f8f;
+}
+
+.content-section-activity-textarea span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8f8f8f;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.content-section-round__submit {
+  width: 100%;
+  max-width: 510px;
+  height: 58px;
+  background-color: #323232;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
