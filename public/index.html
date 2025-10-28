@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/media-query.css" />
     <title>Home</title>
   </head>
   <body>
@@ -17,23 +18,34 @@
     <br />
     <main>
       <section class="image-section">
-        <h5>대표 이미지</h5>
+        <h5 class="title">대표 이미지</h5>
         <form class="image-section-form">
           <label id="file">
             <div>
               <div class="image-section-description">
-                <span>콘텐츠 대표 이미지를 등록해 주세요!</span>
+                <span class="title">콘텐츠 대표 이미지를 등록해 주세요!</span>
                 <span>1:1 비율의 정사각형 이미지를 추천합니다</span>
               </div>
-              <div class="image-section-button">이미지 업로드</div>
+              <div class="image-section-button text-lg__white">
+                이미지 업로드
+              </div>
             </div>
             <input type="file" form="file" />
           </label>
         </form>
 
-        <h5>추가 이미지 (선택)</h5>
-        <span>최대 4장까지 등록할 수 있어요.</span>
+        <h5 class="title">추가 이미지 (선택)</h5>
+        <span class="text-lg">최대 4장까지 등록할 수 있어요.</span>
         <ul class="addition_image_list">
+          <li>
+            <img src="./images/image-plus.png" alt="추가 이미지 예시" />
+          </li>
+          <li>
+            <img src="./images/image-plus.png" alt="추가 이미지 예시" />
+          </li>
+          <li>
+            <img src="./images/image-plus.png" alt="추가 이미지 예시" />
+          </li>
           <li>
             <img src="./images/image-plus.png" alt="추가 이미지 예시" />
           </li>
@@ -41,31 +53,31 @@
       </section>
 
       <section class="content-section">
-        <h5>카테고리</h5>
+        <h5 class="title">카테고리</h5>
         <button class="content-section-category">
           <span>주제를 선택해주세요</span>
           <img src="images/chevron-right.png" alt="카테고리 선택" />
         </button>
-        <h5>콘텐츠 제목</h5>
+        <h5 class="title">콘텐츠 제목</h5>
         <div class="content-section-title">
           <textarea placeholder="제목을 입력해주세요"></textarea>
           <span>0 / 80자 (최소 8자)</span>
         </div>
-        <h5>활동 방식 선택</h5>
+        <h5 class="title">활동 방식 선택</h5>
         <div class="content-section-meeting">
-          <span>만남을 어떤 방식으로 진행하시겠어요?</span>
+          <span class="text-lg">만남을 어떤 방식으로 진행하시겠어요?</span>
           <div class="content-section-meeting-select">
-            <button>온라인</button>
-            <button>직접 만나기</button>
+            <button class="text-lg__black">온라인</button>
+            <button class="text-lg__black">직접 만나기</button>
           </div>
         </div>
-        <h5>상세 정보</h5>
+        <h5 class="title">상세 정보</h5>
         <section class="conent-section-detail">
           <div class="content-section-round">
             <h6>회차 정보</h6>
             <div class="content-section-round-date">
               <span>날짜 선택</span>
-              <button>날짜를 선택해주세요</button>
+              <button class="text-lg">날짜를 선택해주세요</button>
             </div>
 
             <div class="content-section-date">
@@ -74,11 +86,15 @@
                 <div>
                   <button>오전</button>
                 </div>
-                <button class="content-section-date-selection__button">
+                <button
+                  class="content-section-date-selection__button text-lg__black"
+                >
                   10
                 </button>
-                <span class="content-section-date-selection__span">:</span>
-                <button class="content-section-date-selection__button">
+                <span class="text-lg__black">:</span>
+                <button
+                  class="content-section-date-selection__button text-lg__black"
+                >
                   10
                 </button>
               </div>
@@ -90,11 +106,15 @@
                 <div>
                   <button>오전</button>
                 </div>
-                <button class="content-section-date-selection__button">
+                <button
+                  class="content-section-date-selection__button text-lg__black"
+                >
                   10
                 </button>
-                <span class="content-section-date-selection__span">:</span>
-                <button class="content-section-date-selection__button">
+                <span class="text-lg__black">:</span>
+                <button
+                  class="content-section-date-selection__button text-lg__black"
+                >
                   10
                 </button>
               </div>
@@ -113,7 +133,9 @@
           </div>
         </section>
 
-        <button class="content-section-round__submit">회차 추가하기</button>
+        <button class="content-section-round__submit text-lg__white">
+          회차 추가하기
+        </button>
       </section>
     </main>
   </body>
